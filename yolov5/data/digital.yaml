@@ -1,0 +1,6 @@
+train: /home/shine/yolov5/datasets/digit/images/train/
+val: /home/shine/yolov5/datasets/digit/images/train/
+
+ns: 6
+
+names: ['0', '1', '2', '3', '4', '5']

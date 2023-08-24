@@ -1,0 +1,9 @@
+<robot name="mark" xmlns:xacro="http://wiki.ros.org/xacro">
+	<xacro:include filename="head.xacro" />
+	<xacro:include filename="mark_base.xacro" />
+	<xacro:include filename="mark_laser.xacro" />
+	<xacro:include filename="mark_camera.xacro" />
+	<xacro:include filename="gazebo/laser.xacro" />
+	<xacro:include filename="gazebo/camera.xacro" />
+	<xacro:include filename="gazebo/move.xacro" />
+</robot>

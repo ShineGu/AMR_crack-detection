@@ -1,0 +1,10 @@
+<launch>
+        <arg name="model" default="$(find xacro)/xacro --inorder '$(find mark_gazebo)/urdf/mark.xacro'" />
+        <arg name="gui" default="true" />
+        <param name="robot_description" command="$(arg model)" />
+        <param name="use_gui" value="$(arg gui)" />
+        <include file="$(find gazebo_ros)/launch/empty_world.launch">
+		<arg name="world_name" value="$(find mark_gazebo)/worlds/box_house.world" />
+	</include> 
+        <node pkg="gazebo_ros" type="spawn_model" name="spawn_model" args="-urdf -model mark -param robot_description" />
+</launch> 

@@ -1,0 +1,6 @@
+<launch>
+    <include file="$(find urdf01_rviz)/launch/car.launch" />
+    <include file="$(find nav_demo)/launch/nav01_slam.launch" />
+    <include file="$(find nav_demo)/launch/nav03_map_server.launch" />
+    <include file="$(find nav_demo)/launch/nav05_path.launch" />
+</launch>

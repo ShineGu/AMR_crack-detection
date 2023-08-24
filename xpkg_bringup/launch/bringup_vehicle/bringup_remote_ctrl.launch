@@ -1,0 +1,5 @@
+<!--Ctrl vehicle with ros-->
+<launch>		
+	<include file="$(find xpkg_comm)/launch/xnode_comm.launch" />   	
+ 	<include file="$(find xpkg_remote)/launch/xnode_remote.launch" />
+</launch>
